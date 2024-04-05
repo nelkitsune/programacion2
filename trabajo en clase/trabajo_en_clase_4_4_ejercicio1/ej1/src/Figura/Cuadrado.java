@@ -1,6 +1,6 @@
 package Figura;
 
-public class Cuadrado implements Figura{
+public class Cuadrado implements Figura,Dibujable,Rotable{
     private float lado;
 
     public Cuadrado(float lado) {
@@ -19,5 +19,15 @@ public class Cuadrado implements Figura{
     @Override
     public float area() {
         return lado*lado;
+    }
+
+    @Override
+    public void dibujar() {
+        System.out.println("Dibujando cuadrado con lado: " + lado);
+    }
+
+    @Override
+    public void rotar() {
+        System.out.println("Rotando cuadrado...");
     }
 }

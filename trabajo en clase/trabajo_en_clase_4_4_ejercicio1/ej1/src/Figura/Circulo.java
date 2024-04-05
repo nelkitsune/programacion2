@@ -1,6 +1,6 @@
 package Figura;
 
-public class Circulo implements Figura{
+public class Circulo implements Figura,Dibujable{
     private float radio;
 
     public Circulo(float radio) {
@@ -19,5 +19,10 @@ public class Circulo implements Figura{
     @Override
     public float area() {
         return (float) (3.14*radio*radio);
+    }
+
+    @Override
+    public void dibujar() {
+        System.out.println("circulo dibujado");
     }
 }
