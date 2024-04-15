@@ -25,4 +25,4 @@ public class Main {
                 novela1.imprimirInfo();
             }
         }
-        
+
