@@ -5,6 +5,7 @@ public class Site {
     private String date;
     private String time;
     private ArrayList<Facilities>donde = new ArrayList<>();
+    private ArrayList<Test> seHace= new ArrayList<>();
 
     public Site(int phase, String date, String time) {
         this.phase = phase;
@@ -42,5 +43,15 @@ public class Site {
 
     public void setDonde(Facilities facilities) {
         donde.add(facilities);
+        facilities.setSede(this);
+    }
+
+
+    public ArrayList<Test> getSeHace() {
+        return seHace;
+    }
+
+    public void setSeHace(Test test) {
+        seHace.add(test);
     }
 }

@@ -5,7 +5,7 @@ public class Facilities {
     private String location;
     private String name;
     private String tipe;
-    private ArrayList<Test> seHace = new ArrayList<>();
+    private ArrayList<Site> sede = new ArrayList<>();
 
 
     public Facilities(String category, String location, String name, String tipe) {
@@ -48,11 +48,11 @@ public class Facilities {
         this.tipe = tipe;
     }
 
-    public ArrayList<Test> getSeHace() {
-        return seHace;
+    public ArrayList<Site> getSede() {
+        return sede;
     }
 
-    public void setSeHace(Test test) {
-        seHace.add(test);
+    public void setSede(Site site) {
+        sede.add(site);
     }
 }

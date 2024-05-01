@@ -49,6 +49,20 @@ public class Athlete extends Person implements Contract {
         return imc > 24.9 && imc < 30;
     }
 
+    public String estado_corporal(){
+        double aux = calculateBMI();
+        if (aux < 18.5){
+            return "peso insuficiente";
+        } else if (aux >=18.5 && aux < 25) {
+            return "peso normal";
+        } else if (aux >=25 && aux <30)  {
+            return "sobrepeso";
+        } else if (aux>=30) {
+            return "obeso";
+        }
+        return null;
+    }
+
     @Override
     public double takePulse() {
         return 89;
@@ -59,7 +73,8 @@ public class Athlete extends Person implements Contract {
                 " \nAltura= " + getHeight() +
                 " \nPeso= " + getWeight() +
                 "\nIMC= " + (Math.floor(calculateBMI() * 100) / 100) +
-                "\ntiene sobrepeso: " + hasExtraWeight();
+                "\ntiene sobrepeso: " + hasExtraWeight()+
+                "\nestado fisico: "+ estado_corporal();
 
     }
 }

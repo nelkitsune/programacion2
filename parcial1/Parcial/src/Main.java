@@ -44,16 +44,16 @@ public class Main {
         test3.setParticipantes(athlete5);
         test3.setParticipantes(athlete6);
 
-        facilities1.setSeHace(test1);
-        facilities1.setSeHace(test2);
-        facilities2.setSeHace(test3);
+        site1.setSeHace(test1);
+        site1.setSeHace(test2);
+        site2.setSeHace(test3);
 
         site1.setDonde(facilities1);
         site2.setDonde(facilities2);
 
         //Desde un objeto Instalacion
-        System.out.println("Nombre del 3er atleta de la 2da prueba: " +facilities1.getSeHace().get(1).getParticipantes().get(2).getName());
-        System.out.println("Código de la 2da prueba: "+facilities1.getSeHace().get(1).getCode());
+        System.out.println("Nombre del 3er atleta de la 2da prueba: " +facilities1.getSede().get(0).getSeHace().get(1).getParticipantes().get(2).getName());
+        System.out.println("Código de la 2da prueba: "+facilities1.getSede().get(0).getSeHace().get(1).getCode());
         System.out.println("--------------");
 
         //Desde un objeto EquipoNacional
@@ -67,5 +67,7 @@ public class Main {
             System.out.println("------------");
         }
 
+        //Hola profe, me genero confucion el metodo de sobrepeso y el ultimo ejercicio. debido a que tenia duda si obeso tendria que tirar true o false
+        // por eso puse si tenia o no sobrepeso y ademas puse el estado fisico
     }
 }
