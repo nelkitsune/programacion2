@@ -1,6 +1,7 @@
 package com.example.miprimeraapi.entities;
 
-import com.example.miPrimeraApi.entities.enums.TipoEmpleado;
+
+import com.example.miprimeraapi.entities.enums.TipoEmpleado;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,6 +13,8 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Empleado extends Persona implements Serializable{
+public class Empleados extends Persona implements Serializable{
+    @Column(name = "tipo_empleado")
+    private TipoEmpleado tipoEmpleado;
 
 }

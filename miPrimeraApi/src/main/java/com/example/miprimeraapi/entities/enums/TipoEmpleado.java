@@ -1,2 +1,6 @@
-package com.example.miprimeraapi.entities.enums;public class TipoEmpleado {
+package com.example.miprimeraapi.entities.enums;
+public enum TipoEmpleado {
+    ADMIN,
+    COCINERO,
+    CAJERO
 }
