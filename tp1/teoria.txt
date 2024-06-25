@@ -1,0 +1,63 @@
+1. ¿Qué es un TAD?
+Un TAD (Tipo Abstracto de Datos) es una descripción matemática de un conjunto de datos y las operaciones que se pueden realizar sobre ellos. Define qué operaciones están permitidas y cómo se comportan sin especificar cómo se implementan. Es una forma de encapsular datos y su comportamiento asociado, permitiendo que la implementación subyacente pueda cambiar sin afectar a los programas que lo utilizan.
+
+2. ¿Dónde se produce el encapsulamiento?
+El encapsulamiento se produce en la definición de clases y objetos. En la programación orientada a objetos, el encapsulamiento es el mecanismo que restringe el acceso a ciertos componentes de los objetos, lo que significa que los detalles internos del objeto están ocultos desde el exterior. Solo se puede interactuar con los datos a través de los métodos definidos en la clase. Esto se logra usando modificadores de acceso como private, protected y public.
+
+3. ¿Cuáles son las semejanzas y las diferencias entre funciones, procedimientos y métodos?
+Semejanzas:
+
+Todas son bloques de código que realizan una tarea específica.
+Pueden aceptar parámetros y retornar valores (excepto procedimientos que no retornan valores en algunos lenguajes).
+Diferencias:
+
+Funciones: Son bloques de código que realizan una tarea y devuelven un valor. Pueden ser independientes o estar asociadas a una clase (en cuyo caso también se llaman métodos).
+Procedimientos: Son similares a las funciones, pero no devuelven un valor. Se usan para ejecutar acciones.
+Métodos: Son funciones o procedimientos que están definidos dentro de una clase y operan sobre instancias de esa clase (objetos).
+4. ¿Qué es UML? ¿Y cómo se representa una clase en ese lenguaje?
+UML (Lenguaje de Modelado Unificado) es un lenguaje de modelado de propósito general que se usa para visualizar, especificar, construir y documentar los artefactos de sistemas de software.
+
+Representación de una clase en UML:
+Se usa un rectángulo dividido en tres secciones:
+El nombre de la clase en la parte superior.
+Los atributos de la clase en el medio.
+Los métodos de la clase en la parte inferior.
+
+5. public: se aplica a métodos,atibutos y clases
+private: se aplica a métodos,atibutos y clases
+protected: se aplica a métodos,atibutos y clases
+static: clases
+final: clases
+primera letra en minuscula atributo
+primera letra mayuscula no se aplica a clases
+
+6. Verdadero o falso
+Un constructor…
+
+Es el método principal para ejecutar un programa. Falso
+Crea instancias. Verdadero
+Devuelve el valor de un atributo privado. Falso
+Tiene sentencia return. Falso
+Siempre existe uno por defecto, sin parámetros ni inicializaciones de atributos. Verdadero
+Se puede sobreescribir. Falso
+Se puede sobrecargar. Verdadero
+Su nombre se escribe con mayúscula. Falso
+Su calificador de acceso es static. Falso
+Su tipo de devolución no se indica y corresponde a la clase. Verdadero
+Un método…
+
+Puede tener múltiples parámetros con el mismo nombre, siempre y cuando tengan tipos diferentes. Falso
+Puede sobrecargarse. Verdadero
+Puede sobreescribirse. Verdadero
+Puede ser static. Verdadero
+Puede ser tanto public como protected, pero no private. Falso
+Un método puede tener un modificador de acceso final. Verdadero
+
+7. Calificadores de acceso. Completa.
+a. Se necesita que cualquiera pueda acceder al color de un vehículo. Entonces, declaro color como: public
+
+b. Se necesita que color se pueda acceder a través no sólo de vehículo, sino también de Buses, y como todos sabemos un bus es un tipo de vehículo, entonces también deberá tener acceso a color. Entonces, declaro color como: protected
+
+c. Se necesita que color se pueda acceder solamente para vehículo. Entonces, declaro color como: private
+
+Espero que estas soluciones sean útiles para tu trabajo práctico. Si tienes más preguntas o necesitas ayuda con los ejercicios restantes, no dudes en decírmelo.
